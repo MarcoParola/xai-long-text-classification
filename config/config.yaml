@@ -1,0 +1,31 @@
+defaults:
+  - _self_
+  - dataset_info
+
+currentDir: ${hydra:runtime.cwd}
+seed: -1
+
+model: bert
+
+dataset: 
+  name: movies
+  path: ./data
+
+device: cuda
+
+train:
+  batch_size: 32
+  max_epochs: 2
+  lr: 5e-4
+  save_path: checkpoints/
+  num_workers: 1
+  patience: 10
+
+log:
+  path: ./logs
+  wandb: True
+
+wandb:
+  project: xai-long-text-classification
+  entity: marcoparola
+

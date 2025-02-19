@@ -1,0 +1,5 @@
+movies:
+  n_classes: 2
+
+refugees:
+  n_classes: 2
