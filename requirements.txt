@@ -1,0 +1,5 @@
+matplotlib
+hydra-core
+wandb
+transformers
+datasets
